@@ -1,66 +1,1895 @@
 
+
+
+
+
+
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<head>
+    <title>Alojamientos  | Bedsonline</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="canonical" href="//www.stage.bedsonline.com" />
+        <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="pragma" content="no-cache"/>
 
 
-    <body>
-      <style type="text/css" media="screen,print">
-        .chatButton {
-            position: fixed;
-            bottom: 0;
-            right: 40px;
-            padding: 8px 16px;
-            font-size: 16px;
-            font-size: 1.6rem;
-            text-transform: none;
-            -webkit-border-radius: 3px 3px 0px 0px;
-            -moz-border-radius: 3px 3px 0px 0px;
-            -ms-border-radius: 3px 3px 0px 0px;
-            -o-border-radius: 3px 3px 0px 0px;
-            border-radius: 3px 3px 0px 0px;
-            text-align: center;
-            -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3);
-            -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3);
-            box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3);
-            font-family: 'Lato',"Arial Unicode MS",sans-serif;
-            transition: background 0.5s, border 0.5s;
-            z-index: 900;
-        }
+            <style type='text/css' media='screen,print'>
+                @font-face {
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    src: local('Lato Regular'), local('Lato-Regular'),
+                         url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-Regular.woff2?1664377233947) format('woff2'),
+                         url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-Regular.woff?1664377233947) format('woff');
+						 url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-Regular.eot?1664377233947) format('eot');
+                }
+                @font-face {
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    src: local('Lato Bold'), local('Lato-Bold'),
+                         url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-Bold.woff2?1664377233947) format('woff2'),
+                         url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-Bold.woff?1664377233947) format('woff');
+						 url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-Bold.eot?1664377233947) format('eot');
+                }
+                @font-face {
+                    font-family: 'Lato-Bold';
+                    font-style: normal;
+                    font-weight: bold;
+                    src: local('Lato Bold'), local('Lato-Bold'),
+                         url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-Bold.woff2?1664377233947) format('woff2'),
+                         url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-Bold.woff?1664377233947) format('woff');
+						 url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-Bold.eot?1664377233947) format('eot');
+                }
+                @font-face {
+                    font-family: 'Lato';
+                    font-style: italic;
+                    font-weight: 400;
+                    src: local('Lato Italic'), local('Lato-Italic'),
+                         url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-Italic.woff2?1664377233947) format('woff2'),
+                         url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-Italic.woff?1664377233947) format('woff');
+						 url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-Italic.eot?1664377233947) format('eot');
+                }
+                @font-face {
+                    font-family: 'Lato';
+                    font-style: italic;
+                    font-weight: 700;
+                    src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
+                         url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-BoldItalic.woff2?1664377233947) format('woff2'),
+                         url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-BoldItalic.woff?1664377233947) format('woff');
+						 url(https://static.stage.bedsonline.com/webstatic/css/fonts/lato/Lato-BoldItalic.eot?1664377233947) format('eot');
+                }
+            </style>
 
-        .chatButton--online {
-            background: #333;
-            border: 1px solid #222;
-            border-bottom: 0;
-            color: #fff;
-            cursor: pointer;
+            <style type='text/css' media='screen,print'>
+                @font-face {
+                    font-family: 'evoicons';
+                    src:url(https://static.stage.bedsonline.com/webstatic/css/fonts/evoicons/evoicons.eot?1664377233947);
+                    src:url(https://static.stage.bedsonline.com/webstatic/css/fonts/evoicons/evoicons.eot?#iefix-1664377233947) format('embedded-opentype'),
+                        url(https://static.stage.bedsonline.com/webstatic/css/fonts/evoicons/evoicons.woff?1664377233947) format('woff'),
+                        url(https://static.stage.bedsonline.com/webstatic/css/fonts/evoicons/evoicons.ttf?1664377233947) format('truetype'),
+                        url(https://static.stage.bedsonline.com/webstatic/css/fonts/evoicons/evoicons.svg?1664377233947#evoicons) format('svg');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+
+                [class^="icon-"], [class*=" icon-"] {
+                    font-family: 'evoicons' !important;
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+
+
+                    /* Better Font Rendering =========== */
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+                .icon-eye:before {
+                    content: "\e930";
+                }
+                .icon-mapping:before {
+                    content: "\e92c";
+                }
+                .icon-paperplane:before {
+                    content: "\e92d";
+                }
+                .icon-starempty:before {
+                    content: "\e92e";
+                }
+                .icon-unknow:before {
+                    content: "\e92f";
+                }
+                .icon-package:before {
+                    content: "\e92b";
+                }
+                .icon-insights:before {
+                    content: "\e92a";
+                }
+                .icon-lock:before {
+                    content: "\e929";
+                }
+                .icon-safe:before {
+                  content: "\e928";
+                }
+                .icon-share:before {
+                  content: "\e927";
+                }
+                .icon-noresults:before {
+                  content: "\e926";
+                }
+                .icon-hero:before {
+                  content: "\e925";
+                }
+                .icon-language:before {
+                  content: "\e924";
+                }
+                .icon-fast:before {
+                    content: "\e923";
+                }
+                .icon-cell:before {
+                    content: "\e922";
+                }
+                .icon-chat:before {
+                  content: "\e90f";
+                }
+                .icon-corporate:before {
+                  content: "\e921";
+                }
+                .icon-minus:before {
+                  content: "\e90b";
+                }
+                .icon-themepark:before {
+                  content: "\e90a";
+                }
+                .icon-cancellation:before {
+                  content: "\e907";
+                }
+                .icon-newtab:before {
+                  content: "\e906";
+                }
+                .icon-copy:before {
+                  content: "\e905";
+                }
+                .icon-budget:before {
+                  content: "\e941";
+                }
+                .icon-home:before {
+                  content: "\e606";
+                }
+                .icon-cart:before {
+                  content: "\e604";
+                }
+                .icon-calendar:before {
+                  content: "\e608";
+                }
+                .icon-list:before {
+                  content: "\e61b";
+                }
+                .icon-bag:before {
+                  content: "\e61f";
+                }
+                .icon-car:before {
+                  content: "\e61c";
+                }
+                .icon-shield:before {
+                  content: "\e625";
+                }
+                .icon-bed:before {
+                  content: "\e627";
+                }
+                .icon-coin:before {
+                  content: "\e62c";
+                }
+                .icon-bell:before {
+                  content: "\e633";
+                }
+                .icon-graph:before {
+                  content: "\e940";
+                }
+                .icon-starhalf:before {
+                  content: "\e93f";
+                }
+                .icon-gym:before {
+                  content: "\e932";
+                }
+                .icon-checkoff:before {
+                  content: "\e93d";
+                }
+                .icon-checkon:before {
+                  content: "\e93e";
+                }
+                .icon-restore:before {
+                  content: "\e920";
+                }
+                .icon-move:before {
+                  content: "\e91f";
+                }
+                .icon-roundtrip:before {
+                  content: "\e91e";
+                }
+                .icon-recommended:before {
+                  content: "\e91d";
+                }
+                .icon-filter:before {
+                  content: "\e91b";
+                }
+                .icon-pin:before {
+                  content: "\e917";
+                }
+                .icon-unpin:before {
+                  content: "\e919";
+                }
+                .icon-notification:before {
+                  content: "\e916";
+                }
+                .icon-2star:before {
+                  content: "\e915";
+                }
+                .icon-3star:before {
+                  content: "\e918";
+                }
+                .icon-4star:before {
+                  content: "\e91a";
+                }
+                .icon-5star:before {
+                  content: "\e91c";
+                }
+                .icon-map:before {
+                  content: "\e913";
+                }
+                .icon-menu:before {
+                  content: "\e914";
+                }
+                .icon-tag:before {
+                  content: "\e912";
+                }
+                .icon-check:before {
+                  content: "\e911";
+                }
+                .icon-lastsearches:before {
+                  content: "\e910";
+                }
+                .icon-heartfilled:before {
+                  content: "\e90e";
+                }
+                .icon-train:before {
+                  content: "\e90d";
+                }
+                .icon-ship:before {
+                  content: "\e90c";
+                }
+                .icon-transfer_1way:before {
+                  content: "\e909";
+                }
+                .icon-transfer:before {
+                  content: "\e908";
+                }
+                .icon-modification:before {
+                  content: "\e903";
+                }
+                .icon-nomodification:before {
+                  content: "\e904";
+                }
+                .icon-circle:before {
+                  content: "\e902";
+                }
+                .icon-circlefull:before {
+                  content: "\e901";
+                }
+                .icon-keyactive:before {
+                  content: "\e900";
+                }
+                .icon-box:before {
+                  content: "\e801";
+                }
+                .icon-photo:before {
+                  content: "\e65d";
+                }
+                .icon-plus:before {
+                  content: "\e65c";
+                }
+                .icon-arrow:before {
+                  content: "\e65b";
+                }
+                .icon-parking:before {
+                  content: "\e650";
+                }
+                .icon-cup:before {
+                  content: "\e64c";
+                }
+                .icon-delete:before {
+                  content: "\e659";
+                }
+                .icon-activities:before {
+                  content: "\e63b";
+                }
+                .icon-lips:before {
+                  content: "\e639";
+                }
+                .icon-tie:before {
+                  content: "\e638";
+                }
+                .icon-food:before {
+                  content: "\e636";
+                }
+                .icon-pet:before {
+                  content: "\e635";
+                }
+                .icon-magnifier:before {
+                  content: "\e62d";
+                }
+                .icon-heart:before {
+                  content: "\e63f";
+                }
+                .icon-compass:before {
+                  content: "\e637";
+                }
+                .icon-wifi:before {
+                  content: "\e632";
+                }
+                .icon-credit:before {
+                  content: "\e631";
+                }
+                .icon-meter:before {
+                  content: "\e62e";
+                }
+                .icon-pause:before {
+                  content: "\e62b";
+                }
+                .icon-play:before {
+                  content: "\e62a";
+                }
+                .icon-nophoto:before {
+                  content: "\e657";
+                }
+                .icon-pen:before {
+                  content: "\e656";
+                }
+                .icon-restaurant:before {
+                  content: "\e634";
+                }
+                .icon-key:before {
+                  content: "\e630";
+                }
+                .icon-ticket:before {
+                  content: "\e626";
+                }
+                .icon-kid:before {
+                  content: "\e624";
+                }
+                .icon-snow:before {
+                  content: "\e623";
+                }
+                .icon-locationmap:before {
+                  content: "\e622";
+                }
+                .icon-person:before {
+                  content: "\e621";
+                }
+                .icon-gps:before {
+                  content: "\e620";
+                }
+                .icon-door:before {
+                  content: "\e61e";
+                }
+                .icon-gear:before {
+                  content: "\e61d";
+                }
+                .icon-bus:before {
+                  content: "\e617";
+                }
+                .icon-tree:before {
+                  content: "\e615";
+                }
+                .icon-location:before {
+                  content: "\e607";
+                }
+                .icon-confirmation:before {
+                  content: "\e60f";
+                }
+                .icon-info:before {
+                  content: "\e60d";
+                }
+                .icon-error:before {
+                  content: "\e60e";
+                }
+                .icon-alert:before {
+                  content: "\e610";
+                }
+                .icon-file:before {
+                  content: "\e60b";
+                }
+                .icon-pdf:before {
+                  content: "\e613";
+                }
+                .icon-phone:before {
+                  content: "\e60c";
+                }
+                .icon-clock:before {
+                  content: "\e618";
+                }
+                .icon-print:before {
+                  content: "\e611";
+                }
+                .icon-tool:before {
+                  content: "\e616";
+                }
+                .icon-airplane:before {
+                  content: "\1f349";
+                }
+                .icon-flag:before {
+                  content: "\e619";
+                }
+                .icon-star:before {
+                  content: "\e61a";
+                }
+                .icon-send:before {
+                  content: "\e612";
+                }
+                .icon-bullet:before {
+                  content: "\e60a";
+                }
+                .icon-arrow-left:before {
+                  content: "\e600";
+                }
+                .icon-arrow-down:before {
+                  content: "\e601";
+                }
+                .icon-arrow-up:before {
+                  content: "\e602";
+                }
+                .icon-arrow-right:before {
+                  content: "\e603";
+                }
+            </style>
+<link rel="stylesheet" type="text/css"
+      href="https://static.stage.bedsonline.com/webstatic/stylesheets/public/bedsonline/accommodation/engine.min.css?1664377233947"
+      media="screen, print"/>
+            <link rel="stylesheet" type="text/css" href="https://static.stage.bedsonline.com/webstatic/activitiesGallery/lc_lightbox.css">
+
+
+        <link rel="shortcut icon" type="image/ico" href="https://static.stage.bedsonline.com/static/custom/bedsonline/images/favicon.png?1664377233947" />
+    </head>
+
+    <body
+        id=""
+        class=" "
+        data-custom_name="bedsonline"
+        data-iso-language="es"
+        data-PRIMER-DIA-SEMANA=""
+        data-DATE_FORMAT_R3="dd/MM/yyyy"
+        data-cart_tooltip_warning_expired_time="10:00"
+        data-cart_modal_warning_expired_time="5:00"
+        data-deactive_extend_cart_time="true"
+        data-context="engine"
+        data-service="accommodation"
+        data-maps-domain="https://maps.googleapis.com/maps/api/js?"
+        data-maps-client="gme-hotelbedsgroup"
+        data-maps-signature="vyXr_FGXy58Vh8A_6bkb4YqBVZw="
+        data-current-version="5.0.0-SNAPSHOT-20220926-1424"
+        data-purchasetoken-request=""
+        data-purchasetoken-session=""
+        data-cdn-version="1664377233947"
+        data-securefields-dependency="//pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0"
+        data-static-custom="https://static.stage.bedsonline.com" 
+        data-user-id="WCONSULTA"
+        data-user-name="WEB CONSULTA"
+        data-user-email="evolution@hotelbeds.com"
+        data-user-market="ES"
+        data-user-creation-date="1224155433"
+        data-user-language="CAS"
+        data-user-alternative-language="CAS"
+        data-selected-language="CAS"
+        data-gta-url-redirect=""
+        data-quote-id-modification=""
+        data-quote-modification=""
+        data-environment="STAGE"
+        data-booking-modification=""
+        data-document-logo="https://static.stage.bedsonline.com/static/images/logos/voucher/30543_1.png"
+        data-gtm-domain="https://qard6t7zda.execute-api.eu-west-1.amazonaws.com/stage-t-evo">
+
+		<!-- FIN POPUP CANCEL -->
+<script type="text/javascript">
+    window.startTime = new Date().getTime();
+    var identifier = "USUIDENT:WCONSULTA / TTOO:30543 / MARKET:ES";
+
+    function removeDebug() {
+        if (location.href.lastIndexOf('debug=') > -1) {
+            window.location.href = location.href.replace('debug=true', 'debug=false');
+        } else if (location.href.lastIndexOf('?') > -1) {
+            var params = location.href.substring(location.href.lastIndexOf('?') + 1);
+            window.location.href = location.href.substring(0, location.href.lastIndexOf('?') + 1) + 'debug=false&' + params;
+        } else {
+            window.location.href = window.location.href + '?debug=false';
         }
-        .chatButton--online:hover {
-            background: #e2622a;
-            border: 1px solid #b84504;
-            border-bottom: 0;
-        }
-        .chatButton--offline {
-            background: #bcc7c4;
-            border: 1px solid #aaa;
-            color: #eee;
-            border-bottom: 0;
-            cursor: default;
-        }
-    </style>
-      <a id="liveagent_button_online_573570000004Ev5" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('573570000004Ev5')"><!-- Online Chat Content --></a><div id="liveagent_button_offline_573570000004Ev5" style="display: none;"><!-- Offline Chat Content --></div><script type="text/javascript">
-        if (!window._laq) { window._laq = []; }
-        window._laq.push(function(){liveagent.showWhenOnline('573570000004Ev5', document.getElementById('liveagent_button_online_573570000004Ev5'));
-        liveagent.showWhenOffline('573570000004Ev5', document.getElementById('liveagent_button_offline_573570000004Ev5'));
-        });</script>
+    }
+</script>
+
+
+
+
+
+
+
+
+<div id="shoppingcart_resume_dialog" class="aside hidden"></div>
+
+<div class="handlebars-entry-point hidden" data-hb-controller="header/headerController"
+     data-hb-config='{"genericError": null, "cartTimeExtended": null, "cartRefresh": null}'></div>
+
+<div id="notifications_resume_dialog" class="hidden"></div>
+
+
+<div id="currencyExchangeModule" class="hidden"></div>
+
+<div class="hidden" id="popup-shoppingcart-expired">
+    <div class="m_notification info row">
+        <div class="icon">
+            <span class="icon-info default"></span>
+        </div>
+        <div class="message">
+            <p><b>Han pasado más de 30 minutos desde que añadiste un servicio al carro.</b></p>
+            <p>Después de este periodo de tiempo, los servicios son eliminados para asegurar tu disponibilidad y evitar cambios en las tarifas</p>
+        </div>
+    </div>
+</div>
+
+<div id="budget-save-dialog"></div>
+<div id="dialog-form" title="Nombre del presupuesto" class="hidden">
+    <form name="budget-name-form" id="budget-name-form">
+        <fieldset>
+            <input type="text" name="budget-name" id="budget-name" value="" placeholder="Escribe el nombre del presupuesto" class="text ui-widget-content ui-corner-all required" data-required-error="Escribe el nombre del presupuesto">
+        </fieldset>
+    </form>
+</div>
+<div id="shopping-cart-spinner" class="shopping-cart-spinner" style="display: none">
+    <div id="loading_filters" class="overlay-cstyle">
+        <div id="messageFilter" class="message">
+            <div class="newSpinner"></div>
+            <h3> Cargando el estado actual del carrito</h3>
+            <span>Por favor, espera</span>
+        </div>
+    </div>
+</div>
+
+
+<header id="header" data-session-expired-title="Session expired" data-session-expired-subtitle="If you want to recover it, enter your credentials"
+        data-session-expired-link="Back to home" data-session-expired-button="Login">
+
+
+    <div class="header-redesign">
+        <div class="header-top">
+<div class="header-top-content">
+    <div class="logos tb-cell">
+                    <a title="BT_CPD: 64" href="/main"
+               data-currentdate="2022-09-29T12:40:57+02:00" class="main-logo" data-qa="logo-link">
+                <img class="logo-img" data-qa="main-logo-link"
+                     src="https://static.stage.bedsonline.com/static/custom/bedsonline/images/logo/logo_header.png">
+            </a>
+            <div id='entorno' class="entorno-content">STAGE</div>
+    </div>
+    <div class="menu-top tb-cell">
+        <ul>
+                    <input id="client-type" type="hidden" value="PVP"/>
+                        <li id="markup-settings">
+                            <a class="set-markup" href="#" data-tl="admin_fees"><span
+                                        class="icon-coin"></span>Gastos de gestión</a>
+                            <div id="markup-setup-dialog" style="display:none;">
+                                <div id="loadingWrapperMarkup"
+                                     class="overlay-cstyle ui-dialog-content ui-widget-content"
+                                     style="display:none">
+                                    <div id="messageLoading" class="message">
+                                        <div class="newSpinner"></div>
+                                        <h3> Cargando</h3>
+                                        <span>Por favor, espera</span>
+                                    </div>
+                                </div>
+                                <div id="markup-info-msg" class="clearfix">
+                                    <span class="ico-infomessage-default"></span>
+                                    <p>Mediante este módulo podrás calcular el precio final de las reservas añadiendo Gastos de gestión.  Los precios se modificarán exclusivamente en los resultados de búsqueda y el envío de fichas por mail a tus clientes; esta modificación no afecta el precio final en el carrito de la compra.</p>
+                                </div>
+                                <form id="markupForm" method="post" action="" class="markupform gildir">
+                                    
+                                    <fieldset class="radio">
+                                        <input name="s-markup-type" id="markup_type_abs" type="radio"
+                                               checked="checked"
+                                               value="abs"
+                                               data-qa="admin-fees-absolute-option"
+                                               data-custom-max-val="99999.99"
+                                               data-custom-numeric-range-error="Introduce un valor entre 0.1 y 99999.99"/>
+                                        <label for="markup_type_abs">Valor absoluto</label>
+
+                                        <input name="s-markup-type" id="markup_type_rel" type="radio"
+                                               
+                                               value="rel"
+                                               data-qa="admin-fees-percentage-option"
+                                               data-custom-max-val="99.99"
+                                               data-custom-numeric-range-error="Introduce un porcentaje entre 0.1 % y 99.99 %"/>
+                                        <label for="markup_type_rel">Porcentaje</label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <div>
+                                            <div class="input-markup">
+                                                <input data-val-range-min="0.1"
+                                                       data-val-range-max="99999.99"
+                                                       class="required markup-field is-integer numeric-range"
+                                                       data-qa="admin-fees-markup-value"
+                                                       data-markup-field-error="Introduce un valor numérico"
+                                                       data-required-error="Introduce el valor de los gastos de gestión"
+                                                       data-numeric-range-error=  "Introduce un valor entre 0.1 y 99999.99"
+                                                id="markup-qty" name="s-markup" type="text"
+                                                value=""
+                                                placeholder="Importe"
+                                                data-is-integer-error="Debes introducir un número positivo
+                                                "/>
+                                            </div>
+                                                <label class="markup_check">
+                                                    <input name="s-markup-permanent" id="markup_permanent" data-qa="admin-fees-permanent-check"
+                                                           type="checkbox"
+                                                           class="markup-option"/>
+                                                    <span>Hacer permanente <!--Make it permanent--></span>
+                                                </label>
+                                        </div>
+                                        <input type="hidden" name="submit-markup" value='false'/>
+                                        <input class="input-right" type="submit" data-qa="apply-admin-fees"
+                                               value="Aplicar cambio "/>
+
+                                        <input id="delete-markup" data-qa="delete-admin-fees" class="input-right delete-markup" type="submit"
+                                               value="Delete admin fees "/>
+                                        <input type="hidden" id="delete-markup-hidden" value='false'/>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </li>
+                <li>
+                    <form id="useradminprivate" action="/admin" method="post">
+                        <span class="icon-person"></span>
+                        <input class="useradminlink" type="submit" value="Gestión de usuarios" data-qa="user-management"/>
+                    </form>
+                </li>
+            <li>
+                <a id="user-settings" data-qa="user-settings"><span
+                            class="icon-language"></span>Idioma & moneda</a>
+            </li>
+
+                <li class="user">WEB&nbsp;CONSULTA</li>
+                <li class="user">PRUEBAS SISTEMAS MINORISTA SUC 1 - 1</li>
+            <li><a id="logout" class="text-right" href="/logout" data-qa="logout"><span
+                            class="icon-arrow"></span>Cerrar sesión</a></li>
+        </ul>
+    </div>
+</div>
+        </div>
+        <div class="header-center">
+<div class="header-center-content">
+    <div class="shortcuts">
+                    <ul>
+                    <li id="home-dialog" data-submenu-name="submenu-home" data-submenu-active="true" class="submenu-over">
+                        <a href="/main" id="myaccommodationprivate"
+                           class="active has-submenu"
+                           data-qa="home-link">
+                            <span class="icon-home"></span>
+                            Inicio
+                        </a>
+                    </li>
+                    <li id="budgetsDialog">
+                        <a href="/budgets" id="mybudgetsprivate" data-tl="menu-support"
+                           class=""
+                           data-qa="quotes-link">
+                            <span class="icon-budget"></span>
+                            <b class="number hidden" id="QA_budgetsItems"></b>
+                            Presupuestos
+                        </a>
+                    </li>
+                <li id="notificationDialog">
+                    <a href="/notifications" id="mynotificationsprivate"
+                       class=""
+                       data-user-lang="CAS"
+                       data-qa="notifications-link">
+                        <span class="icon-notification"></span>
+                        Notificaciones
+                    </a>
+                </li>
+                    <li id="favoritescount" style="display: none;">
+                        <a href="/favorites" id="myfavoriteprivate"
+                           class=""
+                           data-qa="favorites-link">
+                            <span class="icon-heart"></span>Favoritos
+                        </a>
+                    </li>
+                    <li id="emptyfavorites" class="disabled">
+                        <p class="extended-info generic-tooltip"
+                           data-tooltip-content="Para acceder a favoritos añade al menos un hotel"
+                           data-qa="empty-favorites-link">
+                            <span class="icon icon-heart"></span>Favoritos
+                        </p>
+                    </li>
+                <li>
+                    <!-- POPUP MY BOOKINGS -->
+                    <div id="bookings-reload-popup" class="hidden" href="/bookings">
+                        <div class="clearfix">
+                            <p>Al acceder al panel de modificaciones se vaciará tu carrito.</p>
+                            <p>Si decides acceder al panel de modificaciones, se eliminarán todos los servicios añadidos en el carrito. De lo contrario, podrás continuar tu proceso de compra.</p>
+                        </div>
+                    </div>
+                    
+                    <a href="/bookings"
+                       class=""
+                       data-qa="booking-search-link" id="mybookingsprivate" data-qa="booking-search-link"><span
+                                class="icon-file"></span>Reservas</a>
+                </li>
+
+                    <li id="insights">
+                        <a href="/insights" id="myinsightsprivate" data-qa="insights-link"
+                           class=""
+                           data-submenu-active="false">
+                            <span class="icon-insights"></span>
+                            Insights
+                        </a>
+                    </li>
+
+                <li id="supportDialog">
+                    <a href="/support" id="mysupportprivate"
+                       class=""
+                        data-qa="support-link">
+                        <span class="icon-unknow"></span>
+                        Soporte
+                    </a>
+                </li>
+
+
+                    <li id="cartWithProducts" class="superHidden">
+                        <a id="shoppingcartprivate" class=""
+                           href="/cart"
+                           data-tl="header_shoppingcart_link"
+                           data-qa="cart-link">
+                            <span class="icon-cart"></span>
+                            <b class="number" id="QA_cartItems">0</b> Carrito
+                            <div class="timer" data-qa="timer">
+                                <span class='newSpinner-bt'><i class='newSpinner small'></i></span>
+                                <span class="icon"></span>
+                                <span class="clock"></span>
+                            </div>
+                        </a>
+                        <span id="timer-tooltip"></span>
+                    </li>
+
+                    <li id="emptyCart" class="disabled " data-qa="shopping-cart">
+                        <p class="extended-info generic-tooltip"
+                           data-tooltip-content="Para acceder al carrito de la compra es necesario haber añadido algún servicio">
+                            <span class="icon icon-cart"></span>Carrito
+                        </p>
+                    </li>
+            </ul>
+    </div>
+</div>
+        </div>
+
+        <div class="header-submenu-container ">
+            <div class="header-submenu " id="submenu-home" data-fixed="true">
+<div class="header-submenu-content">
+                <nav class="navTabs over-effect">
+                <ul class="navmenu-h">
+                            <li class="active">
+                                <a id="menuacc" href="/accommodation" data-qa="search-hotel-availability-link">
+                                    <span class="icon-bed"></span>Alojamientos
+                                    <span class="icon-arrow-down"></span>
+                                </a>
+                                <ul>
+                                    <li class="active">
+                                        <a href="/accommodation" data-qa="accommodation-search-link">Buscar disponibilidad</a>
+                                    </li>
+                                    <li class="">
+                                        <a data-qa="productlist-search-link" href="/accommodation/productlist">Listado de hoteles</a>
+                                    </li>
+                                    <li class="">
+                                        <a id="homes" href="/accommodation/homes" data-qa="homes-link">Homes</a>
+                                    </li>
+
+
+                                    <li>
+                                        <a rel="packages_form_main" href="/skipackages?paramTab=276" data-qa="ski-packages-link">
+                                            Nieve - Paquetes
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+
+
+
+
+                            <li >
+                                <a id="menuextras" href="/extras" data-qa="search-activity-availability-link">
+                                    <span class="icon-ticket"></span>Actividades
+                                    <span class="icon-arrow-down"></span>
+                                </a>
+                                <ul>
+                                    <li class=""><a
+                                                href="/extras" data-qa="extras-search-link">Buscar disponibilidad</a></li>
+                                        <li class="">
+                                            <a rel="extras_form_ski"
+                                               href="/skiextras?paramTab=275" data-qa="ski-extras-link">Nieve
+                                                - Extras
+                                            </a>
+                                        </li>
+                                </ul>
+                            </li>
+
+
+
+
+
+
+
+                            <li class="">
+                                <a id="menuthemeparks" data-qa="theme-parks-search-link" data-tl="theme-parks-search-link"
+                                   href="/theme_parks"><span class="icon-themepark"></span>Parques temáticos</a>
+                                
+                            </li>
+
+
+
+
+
+
+
+                            <li >
+                                <a id="menutransfer" data-qa="transfer-search-link" href="/transfers"><span class="icon-bus"></span>Traslados</a>
+                                
+                            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <li >
+                                <a id="menucar" data-qa="car-search-link" href="/car_hire"><span class="icon-car"></span>Alquiler de coches</a>
+                                
+                            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <li>
+                                <a class="external-access custom-tooltip flightsInfo" data-qa="flights-search-link"
+                                   data-access-type="EASY_MARKET_HOME" rel-tooltip="extended-info-flights" data-tl="flights-search-link">
+                                    <span class="icon-airplane"></span>Vuelos
+                                    <div class="hidden qtip-tooltip-flights" id="extended-info-flights">
+                                        <strong>Vuelos patrocinados por Easy Market</strong>
+                                        <p>Este enlace te llevará a la herramienta de reserva de vuelos en una nueva pestaña.</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                </ul>
+            </nav> 
+</div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+            <div class="old-browser-popup" data-qa="notification-popup" style="display: none">
+                <p>Por razones de seguridad deberías tener una versión actualizada de tu navegador para poder finalizar el pago de tu reserva. Los navegadores soportados son Internet Explorer (v10 y superiores) y Mozilla Firefox (v30 y superiores).</p>
+            </div>
+
+	    <main role="main">
+
+
+
+
+
+            
+
+
+
+            <article class="fullBg accommodation">
+                <div class="fullBg__container bannerSlideshow center">
+                    <div class="row">
+                        <section id="tab-container" class="fullBg__form">
+                            <div id="form-content" class="tab-content">
+
+
+
+
+
+<form id="accommodation-search" data-ga-paramtab="1" class="form home search-form form_loading_dialog gildir" action="/accommodation/search" method="post"
+data-loading_text="Cargando resultados"
+data-message_text="En Bedsonline puedes encontrar más de 170.000 hoteles, traslados, coches de alquiler, entradas y actividades"
+>
+    <input name="s-home-search" type="hidden" value="no" id="s-home-search"/>
+    <input type="hidden" name="fDestino" value="/accommodation/search" />
+    <input type="hidden" name="s-hotelcode" id="s-hotelcode" value="" />
+    <input type="hidden" name="s-hotel-text" id="s-hotel-text" value=""/>
+    <input type="hidden" name="ref-agencypayment" id="s-agency-payment" value="on"/>
+    <input type="hidden" name="searchStorage" id="searchStorage" value="Y"/>
+
+    <input type="hidden" id="s-tealeaf-search-section" name="s-tealeaf-search-section" value="ACC_HOME"/>
+    <input type="hidden" name="tealeaf-accsearchid2" id="tealeaf-accsearchid2" value="Y" />
+    <input type="hidden" id="is-last-search" name="is-last-search" value="N"/>
+
+
+
+          
+
+	<fieldset id="destination-text-input" class="destination_suggest">
+		<label for="s-destination-search">Destino, zona o nombre de hotel</label>
+		<div class="field">
+			
+            <input type="hidden" name="s-country" id="s-country" value="-1"/>
+            <input type="hidden" name="s-destination" id="s-destination" value="-1"/>
+            <input type="hidden" name="s-zone" id="s-zone" value="-1"/>
+            <input type="hidden" name="s-country-text" id="s-country-text" value=""/>
+            <input type="hidden" name="s-destination-text" id="s-destination-text" value=""/>
+            <input type="hidden" name="s-zone-text" id="s-zone-text" value=""/>
+		    <input id="s-destination-search"
+		       type="text"
+		       name="s-destination-search"
+		       class="text-field required destination-field suggest input-border"
+		       value=""
+		       data-sort="DN|DM|ZN-AZ|ZM-MZ|HN|HM"
+		       data-config='{"hotels": 10, "zones": 10, "destinations": 3,  "service": "common", "lang": "CAS", "min_length":2, "multilanguage":false}'
+		       data-required-error="Destino, zona o nombre de hotel"
+		       disabled="disabled"
+		       placeholder="ej. Praga"
+			   data-qa="destination"
+		       />
+
+    <div id="loadingWrapper" class="overlay-cstyle" style="display:none">
+        <div id="messageLoading" class="message">
+            <div class="newSpinner"></div>
+            <h3> Cargando resultados</h3>
+            <span>Por favor, espera</span>
+        </div>
+    </div>
+	<a class="QA_formloader" id="locationPickerBtn" rel="accommodation_form_main" href=/accommodation >
+		<span class="icon-list extended-info"></span>
+		<div class="extended-info-popup">Buscar por desplegables</div>
+	</a>
+		</div>
+
+
+	</fieldset>
+    <div class="lastsearches-link">
+        <a data-load-ajax="true" class="lastsearches" data-title="Últimas búsquedas">
+            <span class="icon-lastsearches"></span>Últimas búsquedas
+        </a>
+        <div id="lastsearches-dialog-content" style="display:none;">
+            <div class="lastsearches-content">
+                <div class="lastsearches-menu">
+                    <ul>
+                        <li><a id="lastsearches-menu-hotels" class="active">Hoteles</a></li>
+                        <li><a id="lastsearches-menu-zones">Destinos y zonas</a></li>
+                    </ul>
+                </div>
+                <div id="lastSearchesHotelsGroup" class="lastsearches-results-group hidden">
+					<div id="lastSearchesHotels" class="lastsearches-results-list" data-load-ajax="true" style="display: none;"></div>
+					<div id="lastsearches-hotels-loading" class="overlay-cstyle loading-booking hidden">
+                        <div class="newSpinner"></div>
+                        <h2> Cargando resultados</h2>
+                        <span>Por favor, espera</span>
+                    </div>
+					<div id="lastsearches-hotels-error" class="hidden error-notification">
+
+
+        <article id="" style="" class="row m_notification error ">
+        	<div class="icon">
+            	<span class="icon-error big"></span>
+        	</div>
+            <div class="message">
+                    <span class="code">Tu petición no ha podido completarse</span>
+                    <div class="tealeaf_system_errors">
+                      	<div class="row_table">
+                            <div class="cell description_error">
+                                <span class="tse_code"></span>
+                                <span class="tse_description">Por favor, intentar más tarde</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </article>
+					</div>
+				</div>
+				<div id="lastSearchesZonesGroup" class="lastsearches-results-group hidden">
+					<div id="lastSearchesZones" class="lastsearches-results-list" data-load-ajax="true" style="display: none;"></div>
+					<div id="lastsearches-zones-loading" class="overlay-cstyle loading-booking hidden">
+                        <div class="newSpinner"></div>
+                        <h2> Cargando resultados</h2>
+                        <span>Por favor, espera</span>
+                    </div>
+					<div id="lastsearches-zones-error" class="hidden error-notification">
+
+
+        <article id="" style="" class="row m_notification error ">
+        	<div class="icon">
+            	<span class="icon-error big"></span>
+        	</div>
+            <div class="message">
+                    <span class="code">Tu petición no ha podido completarse</span>
+                    <div class="tealeaf_system_errors">
+                      	<div class="row_table">
+                            <div class="cell description_error">
+                                <span class="tse_code"></span>
+                                <span class="tse_description">Por favor, intentar más tarde</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </article>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+	
+
+        <fieldset id="" class="fieldset date-container">
+
+        <div class="form-field-block date">
+            <label for="s-startdate">Entrada</label>
+
+
+
+			<div class="field date">
+	            <input
+	                 type="text"
+	                 id="s-startdate"
+	                 class="required date-field  input-border startdate"
+	                 value="30/09/2022"
+	                 data-required-error="Selecciona la fecha de entrada"
+	                 data-date-field-error="El formato de la fecha de entrada no es válido"
+	                 data-ge-today-error="La fecha de entrada debe ser igual o posterior a la actual"
+	                 data-dayname="#dayname-startdate"
+	                 data-workdate="#startdate"
+	                 data-min-date="-2"
+                     data-qa="start-date"
+                     data-tl="start-date"
+                     data-release-in-hours-text=""
+	                 name="s-startdate" tabindex="1"/><button type="button" class="false ui-datepicker-trigger icon-calendar"></button>
+                    <input type="hidden" name="s-workstartdate" id="startdate" value="26092022" />
+        	</div>
+        </div>
+        	<div class="form-field-block date">
+                    <label for="s-enddate">Salida</label>
+                <div class="field date">
+					<input
+						type="text"
+						id="s-enddate"
+						class="required date-field gt-date;s-startdate input-border enddate"
+						value="03/10/2022"
+						data-required-error="Selecciona la fecha de salida"
+						data-date-field-error="El formato de la fecha de salida no es válido"
+						data-gt-date-error="La fecha de salida debe ser superior a la de entrada"
+						data-dayname="#dayname-enddate"
+						data-workdate="#enddate"
+						data-max-date=""
+						name="s-enddate"
+                        data-qa="end-date"
+                        data-tl="end-date"
+                        tabindex="2"/><button type="button" class="false ui-datepicker-trigger icon-calendar"></button>
+                        <input type="hidden" name="s-workenddate" id="enddate" value="dd/MM/yyyy" />
+				</div>
+			</div>
+			<div id="nights" class="form-field-block date nights-field-container nomrgn">
+                    <label id="lbl-s-nights" for="s-nights">Noches</label>
+                <select id="s-nights" name="s-nights" class="QA_nights input-border nights" tabindex="3" data-qa="nights" data-tl="nights">
+                    <option
+                       value="1">1</option>
+                    <option
+                       value="2">2</option>
+                    <option
+                          selected="selected"
+                       value="3">3</option>
+                    <option
+                       value="4">4</option>
+                    <option
+                       value="5">5</option>
+                    <option
+                       value="6">6</option>
+                    <option
+                       value="7">7</option>
+                    <option
+                       value="8">8</option>
+                    <option
+                       value="9">9</option>
+                    <option
+                       value="10">10</option>
+                    <option
+                       value="11">11</option>
+                    <option
+                       value="12">12</option>
+                    <option
+                       value="13">13</option>
+                    <option
+                       value="14">14</option>
+                    <option
+                       value="15">15</option>
+                    <option
+                       value="16">16</option>
+                    <option
+                       value="17">17</option>
+                    <option
+                       value="18">18</option>
+                    <option
+                       value="19">19</option>
+                    <option
+                       value="20">20</option>
+                    <option
+                       value="21">21</option>
+                    <option
+                       value="22">22</option>
+                    <option
+                       value="23">23</option>
+                    <option
+                       value="24">24</option>
+                    <option
+                       value="25">25</option>
+                    <option
+                       value="26">26</option>
+                    <option
+                       value="27">27</option>
+                    <option
+                       value="28">28</option>
+                    <option
+                       value="29">29</option>
+                    <option
+                       value="30">30</option>
+                </select>
+            </div>
+    </fieldset>
+
+
+
+    <fieldset id="occupancy" style="" class="occupancy ">
+        <div class="room-options hidden">
+            <input id="s-room-distribution" name="s-room-distribution" type="checkbox" />
+            <label for="s-room-distribution">Usar la misma distribución para todas las habitaciones</label>
+        </div>
+        <input type="text" id="v-rooms-qty" class="hidden">
+        <input type="text" id="v-adults" class="hidden">
+        <input type="text" id="v-children" class="hidden">
+        <input type="text" id="v-ages-children" class="hidden">
+            <div id="id-room-selector" class="pax-distrib-qty form-field-block rooms">
+                <label id="s-rooms-qty-label" for="s-rooms-qty"><span class='generic-tooltip' data-tooltip-content='Habitaciones'>Habitaci&hellip;</span></label>
+                <select id="s-rooms-qty" class="input-border room_selector" name="s-rooms-qty"
+                         data-maximo_hab="5"
+                         data-occuxroom ="8"
+                         data-minoccuxroom ="1"
+                         data-maxchildren = "4"
+						 data-maxadults = "8"
+                         data-minimo_adults_grupo="10"
+                         data-qa="rooms"
+                         data-tl="rooms"
+                         
+                         tabindex="4">
+                        <option selected="selected" value="1">1</option>
+                        <option  value="2">2</option>
+                        <option  value="3">3</option>
+                        <option  value="4">4</option>
+                        <option  value="5">5</option>
+                        <option  value="6">6</option>
+                        <option  value="7">7</option>
+                        <option  value="8">8</option>
+                        <option  value="9">9</option>
+                        <option  value="10">10</option>
+                </select>
+
+            </div>
+            <input type="hidden" value="Hab." id="roomLabel"/>
+            <div class="form-field-block">
+            <table id="pax-distrib-table">
+                <thead>
+                    <tr>
+                            <th class="room-caption-col">&nbsp;</th>
+                        <th class="adults-qty-col"><label for="s-adults_1">Adultos</label></th>
+                        <th class="children-qty-col">
+                        	<label for="s-children_1">
+                        		Niños&nbsp;<span class="icon-info extended-info generic-tooltip" data-tooltip-content="Los bebés (0-2 años sin cumplir) deben indicarse como niños"></span>
+                        	</label>
+                    	</th>
+                        <th class="children-ages-col"><label id="children-ages-caption"  class="superHidden">Edad de los niños </label></th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr id="occuppancy_1" class="room model">
+                                <th class="room-caption-col">Hab. 1</th>
+
+                            <td class="adults-qty-col adults" data-room="1">
+                                <select name="s-adults_1"
+                                        id="s-adults_1"
+                                        tabindex="5"
+                                        class="input-border adults_room max-room-occupation;8"
+                                        data-qa="adults_1"
+                                        data-tl="adults_1"
+                                            data-max-room-occupation-error="El número de personas por habitación no debe ser superior a 8"
+                                        
+                                        >
+                                        <option value="1"  >1</option>
+                                        <option value="2" selected >2</option>
+                                        <option value="3"  >3</option>
+                                        <option value="4"  >4</option>
+                                        <option value="5"  >5</option>
+                                        <option value="6"  >6</option>
+                                        <option value="7"  >7</option>
+                                        <option value="8"  >8</option>
+                                </select>
+                            </td>
+                            <td class="children-qty-col children" data-room="1">
+                                <select
+                                    name="s-children_1"
+                                    class="input-border children_room"
+                                    id="s-children_1"
+                                    data-qa="children_1"
+                                    data-tl="children_1"
+                                    tabindex="6"
+                                    
+                                     >
+                                       <option value="0" selected="selected" >0</option>
+                                       <option value="1"  >1</option>
+                                       <option value="2"  >2</option>
+                                       <option value="3"  >3</option>
+                                       <option value="4"  >4</option>
+                                 </select>
+                            </td>
+	                        <td class="children-ages-col childrenages" data-room="1">
+	                        </td>
+                        </tr>
+                </tbody>
+            </table>
+            </div>
+            <input name="s-child-ages" id="totalchildages" value="" type="hidden" />
+            <input name="s-totaladults" id="totaladults" value="2" type="hidden" />
+            <input name="s-totalchildren" id="totalchildren" value="0" type="hidden" />
+            <input name="s-pax-distribution" id="s-pax-distribution" value="" type="hidden" />
+        <input name="s-totalpaxes" id="totalpaxes" value="2" type="hidden" />
+    </fieldset>
+
+		   <fieldset class="opaque">
+		       <label>
+                    <input type="checkbox" name="opaque" checked="checked" value="N" onclick="$('#s-opaque').val(function(){return (this.value== 'N')?'Y':'N';});" />
+		            Tarifas para empaquetar
+		       </label>
+		       <input type="hidden" name="s-opaque" id="s-opaque" value="Y" />
+		
+		   </fieldset>
+  	<div class="submit-container">
+    <input id="mainsearch" type="submit" class="QA_submit submit "  data-ga-paramtab="1" TTOO="A" SUC="A"   data-qa="search-button" data-tl="search-button" value="Buscar" />
+	</div>
+	
+</form>
+<!-- Extendemos de (less/modules/forms/accommodation_form_main.tpl) -->
+                            </div>
+                        </section>
+                        
+				<ul class="slides">
+						<li>
+
+
+		<a class="tracking_campaign banner has_link"
+		   href='https://promo.bedsonline.com/green-hotels-global/?market=ES&lang=CAS&utm_source=evolution&utm_medium=banner&utm_campaign=global_es_promo_Green_Hotel_Campaign_wave1&type=bannerMain'
+		   target='_blank'
+		   data-campaign-name="BOL_es_main_accom_green_hotel_campaign_w1"
+		   data-campaign-id="BOL_es_main_accom_green_hotel_campaign_w1#20220412#20240914"
+		   data-campaign-creative="bannerMain"
+		   data-campaign-section=""
+		   data-campaign-background="https://cdn.hotelbeds.com/evolution/s3fs-public/Bedsonline/Main/Accommodation/2021_08_31_BOL_es_main_accom_green_hotel_campaign_w1/backgrownd-new-green-program-ES.jpg"
+		   data-tl="slider-image-0"
+		>
+				<img src="https://cdn.hotelbeds.com/evolution/s3fs-public/Bedsonline/Main/Accommodation/2021_08_31_BOL_es_main_accom_green_hotel_campaign_w1/text-evo_600x394_es.png" alt="BOL_es_main_accom_green_hotel_campaign_w1"/>
+		</a>
+						</li>
+						<li>
+
+
+		<a class="tracking_campaign banner has_link"
+		   href='https://promo.bedsonline.com/halloween_2022_portaventura/?market=ES&lang=CAS&utm_source=evolution&utm_medium=banner&utm_campaign=europe_ww_growth_paw_hotels&type=bannerMain'
+		   target='_blank'
+		   data-campaign-name="bol_es_main_acomm_paw_hoteles_2022"
+		   data-campaign-id="bol_es_main_acomm_paw_hoteles_2022#20220923#20221031"
+		   data-campaign-creative="bannerMain"
+		   data-campaign-section=""
+		   data-campaign-background="https://cdn.hotelbeds.com/evolution/s3fs-public/Bedsonline/Main/Accommodation/2022_09_23_bol_es_main_acomm_paw_hoteles_2022/evo_background_es_paw.png"
+		   data-tl="slider-image-1"
+		>
+				<img src="https://cdn.hotelbeds.com/evolution/s3fs-public/Bedsonline/Main/Accommodation/2022_09_23_bol_es_main_acomm_paw_hoteles_2022/evo_bnr_text_1900x500_es.png" alt="bol_es_main_acomm_paw_hoteles_2022"/>
+		</a>
+						</li>
+						<li>
+
+
+		<a class="tracking_campaign banner has_link"
+		   href='https://promo.bedsonline.com/new-year-sales-es/?market=ES&lang=CAS&dest=TFS_FUE_ACE_LPA_SPC&utm_source=evolution&utm_medium=banner&utm_campaign=global_es_promo_new-year-sales&utm_content=wave2&type=bannerMain'
+		   target='_blank'
+		   data-campaign-name="bol_es_main_accom_new_year_sales_21"
+		   data-campaign-id="bol_es_main_accom_new_year_sales_21#20210114#20240225"
+		   data-campaign-creative="bannerMain"
+		   data-campaign-section=""
+		   data-campaign-background="https://cdn.hotelbeds.com/evolution/s3fs-public/Bedsonline/Main/Accommodation/2021_01_14_bol_es_main_accom_new_year_sales_21/BOL-Background-EVO-bg-1900x500-ACC-ES.jpg"
+		   data-tl="slider-image-2"
+		>
+				<img src="https://cdn.hotelbeds.com/evolution/s3fs-public/Bedsonline/Main/Accommodation/2021_01_14_bol_es_main_accom_new_year_sales_21/ES-Evo-600x394-w3-acc.png" alt="bol_es_main_accom_new_year_sales_21"/>
+		</a>
+						</li>
+						<li>
+
+
+		<a class="tracking_campaign banner has_link"
+		   href='https://promo.bedsonline.com/usa-bound-2022/?market=ES&lang=CAS&dest=LVS&utm_source=evolution&utm_medium=banner&utm_campaign=europe_ww_growth_us_bound_2022&type=bannerMain'
+		   target='_blank'
+		   data-campaign-name="bol_es_main_acomm_us_bound_2022"
+		   data-campaign-id="bol_es_main_acomm_us_bound_2022#20220722#20221001"
+		   data-campaign-creative="bannerMain"
+		   data-campaign-section=""
+		   data-campaign-background="https://cdn.hotelbeds.com/evolution/s3fs-public/Bedsonline/Main/Accommodation/2022_07_22_bol_es_main_acomm_us_bound_2022/evo-bg-usa-bol-es-accomm.jpg"
+		   data-tl="slider-image-3"
+		>
+				<img src="https://cdn.hotelbeds.com/evolution/s3fs-public/Bedsonline/Main/Accommodation/2022_07_22_bol_es_main_acomm_us_bound_2022/evo600x394-usa-bound-bol-es.png" alt="bol_es_main_acomm_us_bound_2022"/>
+		</a>
+						</li>
+				</ul>
+		            <ul class="controls">
+		                    <li class="slide-ctrl-0 		                            active
+" rel="0">
+		                        <a href="#"></a>
+		                    </li>
+		                    <li class="slide-ctrl-1 " rel="1">
+		                        <a href="#"></a>
+		                    </li>
+		                    <li class="slide-ctrl-2 " rel="2">
+		                        <a href="#"></a>
+		                    </li>
+		                    <li class="slide-ctrl-3 " rel="3">
+		                        <a href="#"></a>
+		                    </li>
+		            </ul>
+                    </div>
+                </div>
+            </article>
+
+	
+
+    <div class="handlebars-entry-point" data-hb-controller="home/accommodationHomeController">
+
+
+
+
+
+
+
+		<article id="facsheet-anchor-tabs" class="center space-after form-search-by-locator-new">
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+				<h2 class="title_bookings">Gestionar mis reservas</h2>
+				<section id="bookings" class="row">
+					<div class="search_bookings">
+	
+	<form id="form-search-by-locator" class="form embedded search-form gildir" method="POST" action="/bookings/search">
+		<div class="label">
+					<label for="localizer">
+						Referencia de la reserva
+    
+
+    <span class="icon-info extended-info custom-tooltip booking-extended-info" rel-tooltip="extended-info-popup"></span>
+    <div class="hidden qtip-extended-info" id="extended-info-popup">
+						<p>
+							Recuerda introducir el número completo. Ej: 12-558872.<br/>
+							Podrás encontrar este número en el bono:
+						</p>
+						<div id="img-search-help">
+							<img src="https://static.stage.bedsonline.com/static/images/photos/help_voucher/helpImageVoucherbedsonline.png" alt="search help"/>
+						</div>
+							<p>Si quieres gestionar reservas de vuelos haz click en el botón 'Ir al panel de reservas de vuelos'</p>
+    </div>
+					</label>
+		</div>
+		<div class="search-col-left ">
+    
+    
+    <div class="clearable-input">
+			<input
+					id="s-locata"
+					name="s-locata"
+					class="clearable text-field required is-locata"
+					data-required-error="Indica el número de localizador"
+					data-is-locata-error="Formato de localizador inválido (Ej.: 000-000000)"
+					type="text"
+					data-qa="locator-input"
+					data-tl="locator-input"
+					maxlength="14"
+					placeholder = "Ej: 12-558872"
+			value=""
+			/>
+
+
+        <span id="clear-button-loc" class="clear-button icon-delete" style="display: none;"></span>
+    </div>
+		</div>
+		<div class="search-col-right">
+			<input type="hidden" name="booking-number-search" value="true"/>
+			<input type="hidden" name="force-search" value="true"/>
+			<input id="bookingNumberBtn" data-qa="locator-search-button" class="" type="submit" title="Buscar" data-tl="locator-search-button" value="Buscar reserva" />
+		</div>
+	</form>
+
+						<ul class="bookings-shortcuts">
+
+    
+
+
+        <li>
+            <a class="block-button" data-form="form-search-last-30-days-confirm" href="#" data-qa="confirmed-bookings-last-30-days" data-tl="confirmed-bookings-last-30-days">
+                <div class="ico-shortcut"></div>
+                <strong>Realizadas</strong> (Últimos 30 días)
+            </a>
+    <form id="form-search-last-30-days-confirm" name="form-search-last-30-days-confirm" class="search-form mod-validable" method="POST"
+          action="/bookings/search">
+        <input type="hidden" value="creationdate|DESC" name="typeOrder" id="typeOrder">
+        <input type="hidden" value="C" name="tipoFecha" id="tipoFecha">
+        <input type="hidden" value="" name="s-locata" id="s-locata">
+        <input type="hidden" value="20220901" name="from_date" id="from_date">
+        <input type="hidden" value="20220929" name="to_date" id="to_date">
+        <input type="hidden" value="A" name="bookingStatus" id="bookingStatus">
+        <input type="hidden" value="-1" name="country_code" id="country_code">
+        <input type="hidden" value="-1" name="destination_code" id="destination_code">
+        <input type="hidden" value="" id="paymentstatus" type="hidden" name="paymentstatus">
+        <input type="hidden" value="N" name="autocancellationfilter" id="autocancellationfilter">
+        <input type="hidden" value="Y" name="showAllBookings" id="showAllBookings">
+        <input type="hidden" value="Y" name="includeCancelled" id="includeCancelled">
+        <input type="hidden" value="A" name="paymentType" id="paymentType">
+        <input type="hidden" value="default" name="page_mode" id="page_mode">
+        <input type="hidden" name="force-search" value="true"/>
+        <input type="hidden" name="searchDescription" value="2267"/>
+    </form>
+        </li>
+        <li>
+            <a class="block-button" data-form="form-search-next-7-days-cancel" href="#" data-qa="cancellation-chargers-bookings-next-7-days" data-tl="cancellation-chargers-bookings-next-7-days">
+                <div class="ico-shortcut"></div>
+                <strong>Próximas a gastos</strong> (Próximos 7 días)
+            </a>
+    <form id="form-search-next-7-days-cancel" name="form-search-next-7-days-cancel" class="search-form mod-validable" method="POST"
+          action="/bookings/search">
+        <input type="hidden" value="cancfeesdate|DESC" name="typeOrder" id="typeOrder">
+        <input type="hidden" value="G" name="tipoFecha" id="tipoFecha">
+        <input type="hidden" value="" name="s-locata" id="s-locata">
+        <input type="hidden" value="20220929" name="from_date" id="from_date">
+        <input type="hidden" value="20221004" name="to_date" id="to_date">
+        <input type="hidden" value="N" name="bookingStatus" id="bookingStatus">
+        <input type="hidden" value="-1" name="country_code" id="country_code">
+        <input type="hidden" value="-1" name="destination_code" id="destination_code">
+        <input type="hidden" value="" id="paymentstatus" type="hidden" name="paymentstatus">
+        <input type="hidden" value="N" name="autocancellationfilter" id="autocancellationfilter">
+        <input type="hidden" value="Y" name="showAllBookings" id="showAllBookings">
+        <input type="hidden" value="N" name="includeCancelled" id="includeCancelled">
+        <input type="hidden" value="A" name="paymentType" id="paymentType">
+        <input type="hidden" value="default" name="page_mode" id="page_mode">
+        <input type="hidden" name="force-search" value="true"/>
+        <input type="hidden" name="searchDescription" value="2268"/>
+    </form>
+        </li>
+            <li>
+                <a class="block-button" data-form="form-search-last-30-days-pending" href="#" data-qa="pending-payment-bookings-last-30-days" data-tl="pending-payment-bookings-last-30-days">
+                    <div class="ico-shortcut"></div>
+                    <strong>Pendientes de pago</strong> (Últimos 30 días)
+                </a>
+    <form id="form-search-last-30-days-pending" name="form-search-last-30-days-pending" class="search-form mod-validable" method="POST"
+          action="/bookings/search">
+        <input type="hidden" value="creationdate|DESC" name="typeOrder" id="typeOrder">
+        <input type="hidden" value="C" name="tipoFecha" id="tipoFecha">
+        <input type="hidden" value="" name="s-locata" id="s-locata">
+        <input type="hidden" value="20220901" name="from_date" id="from_date">
+        <input type="hidden" value="20220929" name="to_date" id="to_date">
+        <input type="hidden" value="N" name="bookingStatus" id="bookingStatus">
+        <input type="hidden" value="-1" name="country_code" id="country_code">
+        <input type="hidden" value="-1" name="destination_code" id="destination_code">
+        <input type="hidden" value="NO" id="paymentstatus" type="hidden" name="paymentstatus">
+        <input type="hidden" value="N" name="autocancellationfilter" id="autocancellationfilter">
+        <input type="hidden" value="Y" name="showAllBookings" id="showAllBookings">
+        <input type="hidden" value="N" name="includeCancelled" id="includeCancelled">
+        <input type="hidden" value="G" name="paymentType" id="paymentType">
+        <input type="hidden" value="default" name="page_mode" id="page_mode">
+        <input type="hidden" name="force-search" value="true"/>
+        <input type="hidden" name="searchDescription" value="2270"/>
+    </form>
+            </li>
+        <li class="accessTo">
+            <button class="external-access" data-access-type="EASY_MARKET_BOOKINGS" name="userid"
+                    data-tl="flights-bookings-button" data-qa="flights-bookings-button"
+                    value="" data-user-name="" data-tl="flights-bookings-button">
+                <span class="icon-newtab"></span>Ir al panel de reservas de vuelos
+            </button>
+        </li>
+						</ul>
+					</div>
+				</section>
+		</article>
+    <article
+    id="banners-home"
+    class="banners-home center"
+    data-section="home_banner_top,home_banner_middle,home_banner_bottom"
+    data-market="ES"
+    data-ttoo="30543"
+    data-web="1126"
+    data-interface="E"
+    data-language="CAS"
+    data-file="bedsonline_home">
+    </article>
+		<article class="center m_bannerSmall m_bannerSmall_new">
+				
+				<a id="map-based-search" href="" class="row" >
+				<span class="bannerLabel"><span class="icon-location bannerIcon"></span><b>Consulta la ubicación</b> de nuestros establecimientos</span>
+				</a>
+		</article>
+
+		
+		<article id="mkt-contrib-wrapper" class="mktLogos center">
+			<div id="mkt-contrib-container" class="content row">
+				<div class="content_center">
+								<div class='column-7-grid mkt-contrib-item '>
+
+
+		<a class="tracking_campaign banner has_link"
+		   href='https://promo.bedsonline.com/es/rosewood-hotel-group/?lang=cas&utm_source=evolution&utm_medium=banner&utm_campaign=emeai_es_marketing_solutions_rosewood&utm_content=logo&type=logo'
+		   target='_blank'
+		   data-campaign-name="bol_es_logo_rosewood_sept22"
+		   data-campaign-id="bol_es_logo_rosewood_sept22#20220901#20221031"
+		   data-campaign-creative="logo"
+		   data-campaign-section="mkt-contribution"
+		   data-campaign-background="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+		   data-tl="slider-image-0"
+				style="background-image:url('')"
+		>
+				<img src="https://cdn.hotelbeds.com/evolution/s3fs-public/Bedsonline/Rotating Logo/2022_08_31_bol_es_logo_rosewood_sept22/LogoBanner_Rosewood.jpg" alt="bol_es_logo_rosewood_sept22" width="100%"/>
+		</a>
+								</div>
+								<div class='column-7-grid mkt-contrib-item '>
+
+
+		<a class="tracking_campaign banner has_link"
+		   href='https://promo.bedsonline.com/es/iberostar/promo/?utm_source=evolution&utm_medium=banner&utm_campaign=emeai_es_marketing_solutions_iberostar&utm_content=logo&type=logo'
+		   target='_blank'
+		   data-campaign-name="bol_es_logo_iberostar_sept2022"
+		   data-campaign-id="bol_es_logo_iberostar_sept2022#20220901#20221031"
+		   data-campaign-creative="logo"
+		   data-campaign-section="mkt-contribution"
+		   data-campaign-background="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+		   data-tl="slider-image-1"
+				style="background-image:url('')"
+		>
+				<img src="https://cdn.hotelbeds.com/evolution/s3fs-public/Bedsonline/Rotating Logo/2022_08_31_bol_es_logo_iberostar_sept2022/logo_banner[1].jpg" alt="bol_es_logo_iberostar_sept2022" width="100%"/>
+		</a>
+								</div>
+				</div>
+			</div>
+		</article>
+
+        </main>
+<footer class="pdf-hidden">
+    <div class="wrapper">
+		<div class="content">
+			<div class="center">
+	        		    <div class="six left_links">
+	        		
+	        		        <h1>Administración</h1>
+				
+
+           <ul>
+				<input id="action" type="submit" class="hidden" data-tab="0">
+                	<li><a href="/admin/management?active_tab=1" >Modificación de datos fiscales</a></li>
+				<input id="action" type="submit" class="hidden" data-tab="0">
+                	<li><a href="/admin/management" >Info de cuentas bancarias</a></li>
+        </ul>
+
+          <ul>
+            		<li><a href="//www.bavel.es/AreaClientes/Login.aspx?s=" >Acceder E-billing</a></li>
+        </ul>
+	        		
+				        </div>
+
+					    <div class="six right_links">
+					
+			    		    <h1>Atención al cliente</h1>
+					
+
+           <ul>
+				<input id="action" type="submit" class="hidden" data-tab="0">
+                	<li><a href="/bookings" >Reclamar sobre una reserva</a></li>
+				<input id="action" type="submit" class="hidden" data-tab="0">
+                	<li><a href="/admin/cc/contact?active_tab=2" >Tu opinión</a></li>
+				<input id="action" type="submit" class="hidden" data-tab="0">
+                	<li><a href="/admin/cc/contact?active_tab=0" >Contacta</a></li>
+        </ul>
+
+          <ul>
+            		<li><a href="/admin/cc/contact?active_tab=1" >Equipo comercial</a></li>
+            		<li><a href="http://bolagentsuk.hotels.stage-dps-aws-eu-west-1.service/es/es-es/ES&agent=WCONSULTA" target="_blank">Espacio agentes</a></li>
+        </ul>
+				
+				        </div>
+		    </div>
+        </div>
+			
+        <div class="bottom">
+            <div class="center">
+                <div class="row">
+                    <p class="tripadvisor"><span>Ahora con valoraciones y comentarios de</span>
+<img src="https://www.tripadvisor.com/img/cdsi/langs/en/tripadvisor_logo_transp_160x40-20634-0.png" width="120"
+     height="30"/>
+</p>
+                    <ul>
+                             <li><b>Identificador de sesión:</b> <span id="tlf-session-id">deb81c4</span></li>
+
+                        <li><a target="_blank" href="/document/legal-disclaimer">Aviso Legal</a> &copy; 2022 </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<div id="loading-campaign" class="hidden">
+</div>
+
+
+	<label id="labels" 
+		data-message="Buscando acomodación en"
+		data-in="En"
+		data-from="Desde" 
+		data-to="Hasta" 
+		data-time="a las" 
+		data-room="Habitaciones" 
+		data-adult="Adultos" 
+		data-child="Niños" 
+		data-booking="Tu reserva se está confirmando" 
+		data-wait="Por favor, espere un momento"
+	></label>
+	<div id="overlay" style="display:none" class="overlay"></div>
+	<div id="loading_service_search" class="overlay-cstyle" style="display:none">
+		<div id="message" class="message">
+			<div class="newSpinner"></div>
+		</div>
+			<div id="campaign">
+				<img src="https://cdn.hotelbeds.com/evolution/s3fs-public/Bedsonline/Waiting/2021_02_04_bol_es_waiting_banner_join_us_facebook/BOL-LatestUpdatesFB_410x105_ES.jpg" />
+			</div>
+	</div>
+
+        <!-- END OF CONTENT -->
+
         
-        <script type='text/javascript' src='https://c.la1-c1cs-lo3.salesforceliveagent.com/content/g/js/56.0/deployment.js'></script>
+
+            <!-- TEALEAF JAVASCRIPT CODE -->
+            <script src="https://static.stage.bedsonline.com/webstatic/tealeaf/tealeaf.min.js?1664377233947" type="text/javascript"></script>
+        <script type="text/javascript">
+            var Tealeaf_data = {
+                    	IdWeb:"1126",
+                    	Interface:"E",
+                    	Market:"ES",
+                    	TTOO:"30543",
+                    	SellingChannel:"",
+                    	profile:"A",
+                    	PageName:"ACC_HOME",
+                    	MetaPlatform:"CETS",
+                    	ClientSource:"I",
+                    	LastLogin:"20220929",
+                    	AgencyBranch:"1",
+                    	NMark:"0",
+                    	PaymentPlatform:"UNICOL",
+                    	PaymentPlatformType:"UNICOL",
+                    	ClientType:"Prepay",
+                    	ClientModel:"PVP"
+            };
+        </script>
+
+        
+            <!-- Optimizely script  for AB testing-->
+                <script src="//cdn.optimizely.com/js/9862243044.js"></script>
+            <script src="https://static.stage.bedsonline.com/webstatic/jquery-2.2.4.min.js?1664377233947"></script>
+            <script src="https://static.stage.bedsonline.com/webstatic/jquery-migrate-1.4.1.min.js?1664377233947"></script>
+            <script src="https://static.stage.bedsonline.com/webstatic/js/tokenize-2.6/jquery.tokenize.js?1664377233947"></script>
+            <script type="text/javascript" src="/webstatic/common.min.js?1664377233947"></script><script type="text/javascript" src="/webstatic/modules.min.js?1664377233947&l=CAS&a=CAS&w=Bedsonline&m=complete-form-engine,less-search-form,less-set-tab-order,set-default-focus,less-distribucion-pasajeros,autocomplete-style,less-filtro-pais-destino-tab,less-click-promotion,old-browser-advertisement,regional-date-format,user-area,navigation-go-up-link,switch,validate-search-form,markup-dialog-button,handlebars-bootstrap,update-header-shoppingcart-items,external-access,generic-tooltip,flights-tooltip,favorites-items-status,markupform-submit,validate-booking-cart,date-selector,relaciona-fechas,fulltextsearch-ready,select2,theme-parks-modal-destination,less-validate-search-form,main-search-data-layer-event,clean-combos-onclick,combos-dependientes-zone,combos-dependientes-destination,combos-dependientes-country,combos-dependientes-text,hotel-search-autocomplete,less-bannerSlideshow,filtro-cercade-engine,availability-url-modification,less-location-picker,gta-popup-deeplink,administration-supplement-cancel,bookings-search-form,booking-tooltip,clearable-input,bookings-shortcuts,less-busqueda-mapa,logos-slide"></script>
+ 			<script src="https://static.stage.bedsonline.com/webstatic/js/qtip/jquery.qtip.min.js?1664377233947"></script>
+		    <script src="https://static.stage.bedsonline.com/webstatic/js/qtip/imagesloaded.pkg.min.js?1664377233947"></script>
+
+<script src="https://static.stage.bedsonline.com/webstatic/js/vendor/vuelidate/vuelidate.min.js?1664377233947"></script>
+<script src="https://static.stage.bedsonline.com/webstatic/js/vendor/vuelidate/validators.min.js?1664377233947"></script>
+
+<script src="https://static.stage.bedsonline.com/webstatic/js/chartjs-2.9.4.min.js?1664377233947"></script>
+<script src="https://static.stage.bedsonline.com/webstatic/js/vue-chartjs-3.5.1.min.js?1664377233947"></script>
+<script src="https://static.stage.bedsonline.com/webstatic/js/chartjs-plugin-datalabels-0.7.0.min.js?1664377233947"></script>
+<script src="https://static.stage.bedsonline.com/webstatic/jquery.html5-placeholder-shim.js?1664377233947"></script>
+
+<script src="https://static.stage.bedsonline.com/webstatic/js/config.js?v=1664377233947"></script>
+<script id="app-script-id" src="https://static.stage.bedsonline.com/webstatic/js/require-2.2.0.min.js?1664377233947"
+        data-main="/webstatic/js/app.js"
+        data-include-path="https://static.stage.bedsonline.com/webstatic/templates/">
+</script>
+<script src="https://static.stage.bedsonline.com/webstatic/activitiesGallery/alloy_finger.js"></script>
+<script src="https://static.stage.bedsonline.com/webstatic/activitiesGallery/lc_lightbox.lite.js"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            (function() {
+                function riskifiedBeaconLoad() {
+                    var store_domain = "bedsonline.com";
+                    var session_id = "14c97b3a-61a7-459d-acd0-76e97ce75079";
+                    var url = ('https:' == document.location.protocol ? 'https://' : 'http://')
+                        + "beacon.riskified.com?shop=" + store_domain + "&sid=" + session_id;
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = url;
+                    var x = document.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+                if (window.attachEvent)
+                    window.attachEvent('onload', riskifiedBeaconLoad)
+                  else
+                    window.addEventListener('load', riskifiedBeaconLoad, false);
+                })();
+            //]]>
+        </script>
+
+<!--CÓDIGO DE GOOGLE TAG MANAGER -->
+    <script>
+        dataLayer = [{"idWeb":"1126","interface":"E","market":"ES","ttoo":"30543","profile":"USER_ADMIN","clientType":"P","ident":"WCONSULTA","name":"WEB CONSULTA","email":"evolution@hotelbeds.com","unixCreationDate":"1224155433","MetaPlatform":"CETS","ttooCountry":"ES","features":{"liveChat":false},"page_url":"http://www.stage.bedsonline.com/accommodation","page_domain":"www.stage.bedsonline.com","page_pathname":"/accommodation","page_category":"","page_section":"","page_type":"","page_language":"ESP","page_currency":"EUR","user_id":"WCONSULTA","user_tour_operator_name":"PRUEBAS SISTEMAS MINORISTA","user_tour_operator_branch":"1","user_tour_operator_code":"30543","user_interface_sa":"E","usu_login":"WCONSULTA","user_profile":"A","user_source_market":"ES","client_type":"Prepay","client_id":"16498000.1662025348","client_session_id":"DEB81C4"}]
+    </script>
+
+    <noscript>
+    
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WTC7SD4"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WTC7SD4');
+    </script>
+
+        <script type='text/javascript' src='https://static.stage.bedsonline.com/webstatic/js/googletagmanager/sendPageViewPush.js?1664377233947'></script>
+        <script type='text/javascript' src='https://static.stage.bedsonline.com/webstatic/js/googletagmanager/sendEventPush.js?1664377233947'></script>
+<!--FIN CÓDIGO DE GOOGLE TAG MANAGER -->
+
+        <style type="text/css" media="screen,print">
+            .chatButton {
+                position: fixed;
+                bottom: 0;
+                right: 40px;
+                padding: 8px 16px;
+                font-size: 16px;
+                font-size: 1.6rem;
+                text-transform: none;
+                -webkit-border-radius: 3px 3px 0px 0px;
+                -moz-border-radius: 3px 3px 0px 0px;
+                -ms-border-radius: 3px 3px 0px 0px;
+                -o-border-radius: 3px 3px 0px 0px;
+                border-radius: 3px 3px 0px 0px;
+                text-align: center;
+                -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3);
+                -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3);
+                box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3);
+                font-family: 'Lato',"Arial Unicode MS",sans-serif;
+                transition: background 0.5s, border 0.5s;
+                z-index: 900;
+            }
+
+            .chatButton--online {
+                background: #333;
+                border: 1px solid #222;
+                border-bottom: 0;
+                color: #fff;
+                cursor: pointer;
+            }
+            .chatButton--online:hover {
+                background: #e2622a;
+                border: 1px solid #b84504;
+                border-bottom: 0;
+            }
+            .chatButton--offline {
+                background: #bcc7c4;
+                border: 1px solid #aaa;
+                color: #eee;
+                border-bottom: 0;
+                cursor: default;
+            }
+        </style>
+
+        <a class="chatButton chatButton--online"
+            id="liveagent_button_online_573570000004Ev5"
+            href="javascript://Chat" style="display: none;"
+            onclick="liveagent.startChat('573570000004Ev5')">
+            <span class="icon-person"></span>
+            Habla con un agente
+        </a>
+
+        <div class="chatButton chatButton--offline"
+            id="liveagent_button_offline_573570000004Ev5"
+            style="display: none;">
+            <span class="icon-person"></span>
+            Agente no disponible
+        </div>
+
+        <script type="text/javascript">
+            if (!window._laq) { window._laq = []; }
+            window._laq.push(function(){liveagent.showWhenOnline('573570000004Ev5', document.getElementById('liveagent_button_online_573570000004Ev5'));
+			liveagent.showWhenOffline('573570000004Ev5', document.getElementById('liveagent_button_offline_573570000004Ev5'));
+            });
+        </script>
+
+    
+
+				<script type='text/javascript' src='https://c.la1-c1cs-lo3.salesforceliveagent.com/content/g/js/56.0/deployment.js'></script>
+<script type='text/javascript'>
+liveagent.init('https://d.la1-c1cs-lo3.salesforceliveagent.com/chat', '5722p0000004SsC', '00D3L0000000dYq');
+</script>
+
+
         <script type='text/javascript'>
-        liveagent.init('https://d.la1-c1cs-lo3.salesforceliveagent.com/chat', '5722p0000004SsC', '00D3L0000000dYq');
+            liveagent.addCustomDetail("atlasNumber", "30543", false);
+            liveagent.addCustomDetail("branchNumber", "1", false);
         </script>
 </body>
 </html>
 <!-- Extendemos de (less/main_layout.tpl) -->
 <!-- Extendemos de (less/engine/main.tpl) -->
-
-
