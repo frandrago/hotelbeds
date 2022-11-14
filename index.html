@@ -5,7 +5,49 @@
 
 
     <body>
+      <style type="text/css" media="screen,print">
+        .chatButton {
+            position: fixed;
+            bottom: 0;
+            right: 40px;
+            padding: 8px 16px;
+            font-size: 16px;
+            font-size: 1.6rem;
+            text-transform: none;
+            -webkit-border-radius: 3px 3px 0px 0px;
+            -moz-border-radius: 3px 3px 0px 0px;
+            -ms-border-radius: 3px 3px 0px 0px;
+            -o-border-radius: 3px 3px 0px 0px;
+            border-radius: 3px 3px 0px 0px;
+            text-align: center;
+            -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3);
+            -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3);
+            box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.3);
+            font-family: 'Lato',"Arial Unicode MS",sans-serif;
+            transition: background 0.5s, border 0.5s;
+            z-index: 900;
+        }
 
+        .chatButton--online {
+            background: #333;
+            border: 1px solid #222;
+            border-bottom: 0;
+            color: #fff;
+            cursor: pointer;
+        }
+        .chatButton--online:hover {
+            background: #e2622a;
+            border: 1px solid #b84504;
+            border-bottom: 0;
+        }
+        .chatButton--offline {
+            background: #bcc7c4;
+            border: 1px solid #aaa;
+            color: #eee;
+            border-bottom: 0;
+            cursor: default;
+        }
+    </style>
       <a id="liveagent_button_online_573570000004Ev5" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('573570000004Ev5')"><!-- Online Chat Content --></a><div id="liveagent_button_offline_573570000004Ev5" style="display: none;"><!-- Offline Chat Content --></div><script type="text/javascript">
         if (!window._laq) { window._laq = []; }
         window._laq.push(function(){liveagent.showWhenOnline('573570000004Ev5', document.getElementById('liveagent_button_online_573570000004Ev5'));
