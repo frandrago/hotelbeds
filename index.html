@@ -1,0 +1,120 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+
+    <body
+        id=""
+        class=" "
+        data-custom_name="bedsonline"
+        data-iso-language="es"
+        data-PRIMER-DIA-SEMANA=""
+        data-DATE_FORMAT_R3="dd/MM/yyyy"
+        data-cart_tooltip_warning_expired_time="10:00"
+        data-cart_modal_warning_expired_time="5:00"
+        data-deactive_extend_cart_time="true"
+        data-context="engine"
+        data-service="accommodation"
+        data-maps-domain="https://maps.googleapis.com/maps/api/js?"
+        data-maps-client="gme-hotelbedsgroup"
+        data-maps-signature="vyXr_FGXy58Vh8A_6bkb4YqBVZw="
+        data-current-version="5.0.0-SNAPSHOT-20220926-1424"
+        data-purchasetoken-request=""
+        data-purchasetoken-session=""
+        data-cdn-version="1664377233947"
+        data-securefields-dependency="//pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0"
+        data-static-custom="https://static.stage.bedsonline.com" 
+        data-user-id="WCONSULTA"
+        data-user-name="WEB CONSULTA"
+        data-user-email="evolution@hotelbeds.com"
+        data-user-market="ES"
+        data-user-creation-date="1224155433"
+        data-user-language="CAS"
+        data-user-alternative-language="CAS"
+        data-selected-language="CAS"
+        data-gta-url-redirect=""
+        data-quote-id-modification=""
+        data-quote-modification=""
+        data-environment="STAGE"
+        data-booking-modification=""
+        data-document-logo="https://static.stage.bedsonline.com/static/images/logos/voucher/30543_1.png"
+        data-gtm-domain="https://qard6t7zda.execute-api.eu-west-1.amazonaws.com/stage-t-evo">
+
+  
+
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
+
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		embedded_svc.settings.displayHelpButton = true; //Or false
+		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+		// Settings for Chat
+		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+			// Returns a valid button ID.
+		//};
+		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+
+		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+		embedded_svc.settings.entryFeature = 'LiveAgent';
+
+		embedded_svc.init(
+			'https://hotelbedscrm--devjonatan.sandbox.my.salesforce.com',
+			'https://hotelbedscrm--devjonatan.sandbox.my.salesforce-sites.com/',
+			gslbBaseURL,
+			'00D3L0000000dYq',
+			'Bedsy',
+			{
+				baseLiveAgentContentURL: 'https://c.la1-c1cs-lo3.salesforceliveagent.com/content',
+				deploymentId: '5722p0000004SsC',
+				buttonId: '573570000004Ev5',
+				baseLiveAgentURL: 'https://d.la1-c1cs-lo3.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I2p000000XbKWEA0_16ea19f6cc6',
+				isOfflineSupportEnabled: true
+			}
+		);
+	};
+
+	if (!window.embedded_svc) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://hotelbedscrm--devjonatan.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
+</script>
+
+</body>
+</html>
+<!-- Extendemos de (less/main_layout.tpl) -->
+<!-- Extendemos de (less/engine/main.tpl) -->
+
+
